@@ -15,13 +15,13 @@ Sebokeng Hospital = (26.6071 S, 27.8473 E)
 
 # Function to calculate distance between two points
 def calculate_distance(Sebokeng Hospital, Muvhango):
-    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
-def calculate_distance(Sebokeng Hospital, Muvhango):
-    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
-def calculate_distance(Sebokeng Hospital, Muvhango):
-    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
-def calculate_distance(Sebokeng Hospital, Muvhango):
-    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
+    return math.sqrt((26.6741 - 26.6071 ** 2 + 27.8022 - 27.8473) ** 2)
+def calculate_distance(Sebokeng Hospital, Orange_Farm):
+    return math.sqrt((26.4665 - 26.6071) ** 2 + 27.8590 - 27.8473) ** 2)
+def calculate_distance(Sebokeng Hospital, Sharpeville):
+    return math.sqrt((26.6864 - 26.6071) ** 2 + 27.8751 - 27.8473) ** 2)
+def calculate_distance(Sebokeng Hospital, Bophelong):
+    return math.sqrt((26.6934 - 26.6071) ** 2 + 27.7784 - 27.8473) ** 2)
 
 # Drone class with basic functionalities
 class Drone:
