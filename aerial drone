@@ -3,15 +3,15 @@ import random
 
 # Define the coordinates of delivery locations
 delivery_locations = {
-    "Muvhango": (26.6741 S, 27.
-    "Village B": (5, 4),
-    "Village C": (1, 8),
-    "Village D": (7, 7),
-    "Village E": (6, 2),
+    "Muvhango": (26.6741 S, 27.8022 E),
+    "Orange Farm": (26.4665 S, 27.8590 E),
+    "Sharpeville": (26.6864 S,27.8751 E),
+    "Bophelong": (26.6934 S,27.7784 E),
+    
 }
 
 # Start location (drone base)
-base_location = (0, 0)
+Sebokeng Hospital = (0, 0)26.6071 S, 27.8473 E)
 
 # Function to calculate distance between two points
 def calculate_distance(point1, point2):
