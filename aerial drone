@@ -14,7 +14,11 @@ delivery_locations = {
 Sebokeng Hospital = (26.6071 S, 27.8473 E)
 
 # Function to calculate distance between two points
-def calculate_distance(point1, point2):
+def calculate_distance(Sebokeng Hospital, Muvhango):
+    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
+def calculate_distance(Sebokeng Hospital, Muvhango):
+    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
+def calculate_distance(Sebokeng Hospital, Muvhango):
     return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
 
 # Drone class with basic functionalities
