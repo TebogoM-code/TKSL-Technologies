@@ -20,6 +20,8 @@ def calculate_distance(Sebokeng Hospital, Muvhango):
     return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
 def calculate_distance(Sebokeng Hospital, Muvhango):
     return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
+def calculate_distance(Sebokeng Hospital, Muvhango):
+    return math.sqrt((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)
 
 # Drone class with basic functionalities
 class Drone:
