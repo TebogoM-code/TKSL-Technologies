@@ -11,7 +11,7 @@ delivery_locations = {
 }
 
 # Start location (drone base)
-Sebokeng Hospital = (0, 0)26.6071 S, 27.8473 E)
+Sebokeng Hospital = (26.6071 S, 27.8473 E)
 
 # Function to calculate distance between two points
 def calculate_distance(point1, point2):
