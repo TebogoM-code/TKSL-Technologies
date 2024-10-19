@@ -23,7 +23,7 @@ class Drone:
         flight_time = distance / 10
         time.sleep(flight_time)
         self.location = dest_coords
-        print(f"Drone {self.aerial aerial} arrived at {upper ngcengane}.")
+        print(f"Drone {self.aerial aerial} arrived at {upper_ngcengane}.")
     
     def verify_recipient(self, verification_type):
         if verification_type == 'QR':
@@ -59,8 +59,8 @@ class Drone:
         self.status = 'Idle'
     
     @staticmethod
-    def _calculate_distance(coord1, coord2):
-        return math.sqrt((coord2[0] - coord1[0]) ** 2 + (coord2[1] - coord1[1]) ** 2)
+    def _calculate_distance(self.location, upper_ngcengane):
+        return math.sqrt((31.5941 - 31.2335) ** 2 + (28.7569 - 28.6717) ** 2)
 
 # Sample delivery simulation
 villages = {
