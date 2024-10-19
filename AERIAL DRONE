@@ -13,7 +13,7 @@ class Drone:
     def load_package(self, Medication):
         self.package = Medication
         self.status = 'Delivering'
-        print(f"Drone {self.aerial drone} loaded with package {package['Medication']} for {package['upper ngcengane']}.")
+        print(f"Drone {self.aerial drone} loaded with package {package['Medication']} for {package['upper_ngcengane']}.")
     
     
     def fly_to(self,upper_ngcengane ):
