@@ -4,8 +4,8 @@ import math
 import qrcode
 
 class Drone:
-    def __init__(self, aerial_drone):
-        self.drone_id = Aerial aerial
+    def __init__(self, Aerial_drone):
+        self.drone_id = Aerial_drone
         self.location = (31.5941 , 28.7569 )  
         self.status = 'Idle'
         self.package = Medication
@@ -17,7 +17,7 @@ class Drone:
     
     
     def fly_to(self,upper_ngcengane ):
-        print(f"Drone {self.Aerial drone} flying to {upper_ngcengane}...")
+        print(f"Drone {self.Aerial_drone } flying to {upper_ngcengane}...")
         dest_coords = villages[upper_ngcengane]
         distance = self._calculate_distance(self.location, 31.2335 , 28.6717 )
         flight_time = distance / 10
