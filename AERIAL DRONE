@@ -8,14 +8,15 @@ class Drone:
         self.drone_id = Aerial drone
         self.location = (31.5941 S, 28.7569 E)  # Default starting position (Mthatha General hospital)
         self.status = 'Idle'
-        self.package = None
+        self.package = Medication
     
-    def load_package(self, package):
-        self.package = package
+    def load_package(self, Medication):
+        self.package = Medication
         self.status = 'Delivering'
-        print(f"Drone {self.drone_id} loaded with package {package['id']} for {package['destination']}.")
+        print(f"Drone {self.aerial drone} loaded with package {package['Medication']} for {package['upper ngcengane']}.")
     
-    def fly_to(self, destination):
+    
+    def fly_to(self,upper ngcengane ):
         print(f"Drone {self.drone_id} flying to {destination}...")
         dest_coords = villages[destination]
         distance = self._calculate_distance(self.location, dest_coords)
