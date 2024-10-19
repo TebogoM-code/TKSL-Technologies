@@ -1,0 +1,81 @@
+import random
+import time
+import math
+import qrcode
+
+class Drone:
+    def __init__(self, aerial drone):
+        self.drone_id = Aerial drone
+        self.location = (31.5941 S, 28.7569 E)  # Default starting position (Mthatha General hospital)
+        self.status = 'Idle'
+        self.package = None
+    
+    def load_package(self, package):
+        self.package = package
+        self.status = 'Delivering'
+        print(f"Drone {self.drone_id} loaded with package {package['id']} for {package['destination']}.")
+    
+    def fly_to(self, destination):
+        print(f"Drone {self.drone_id} flying to {destination}...")
+        dest_coords = villages[destination]
+        distance = self._calculate_distance(self.location, dest_coords)
+        flight_time = distance / 10
+        time.sleep(flight_time)
+        self.location = dest_coords
+        print(f"Drone {self.drone_id} arrived at {destination}.")
+    
+    def verify_recipient(self, verification_type):
+        if verification_type == 'QR':
+            recipient_qr = qrcode.make(self.package['id'])  # Generate expected QR
+            print(f"Scan QR code: {recipient_qr}")
+            # Simulate scanning the QR code
+            scanned_qr = recipient_qr  # Simulating match
+            return self.verify_recipient_qr(scanned_qr)
+        
+        elif verification_type == 'OTP':
+            entered_otp = input("Enter OTP: ")  # Simulate user entering OTP
+            return self.verify_otp(entered_otp)
+    
+    def verify_recipient_qr(self, qr_code):
+        expected_qr = qrcode.make(self.package['id'])
+        return qr_code == expected_qr
+
+    def verify_otp(self, entered_otp):
+        return entered_otp == self.package['otp']
+
+    def deliver_package(self):
+        if self.package:
+            verification_successful = self.verify_recipient('OTP')  # or 'QR'
+            if verification_successful:
+                print(f"Drone {self.drone_id} delivered package {self.package['id']}.")
+                self.package = None
+                self.status = 'Returning'
+            else:
+                print("Verification failed. Unable to deliver.")
+    
+    def return_to_base(self):
+        print(f"Drone {self.drone_id} returning to base...")
+        self.fly_to_base()
+        self.status = 'Idle'
+    
+    @staticmethod
+    def _calculate_distance(coord1, coord2):
+        return math.sqrt((coord2[0] - coord1[0]) ** 2 + (coord2[1] - coord1[1]) ** 2)
+
+# Sample delivery simulation
+villages = {
+    'Village_A': (10, 20),
+    'Village_B': (30, 40)
+}
+
+package = {
+    'id': 1234,
+    'destination': 'Village_A',
+    'otp': '5678'
+}
+
+drone = Drone(1)
+drone.load_package(package)
+drone.fly_to('Village_A')
+drone.deliver_package()
+drone.return_to_base()
