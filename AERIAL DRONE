@@ -6,7 +6,7 @@ import qrcode
 class Drone:
     def __init__(self, aerial drone):
         self.drone_id = Aerial aerial
-        self.location = (31.5941 S, 28.7569 E)  # Default starting position (Mthatha General hospital)
+        self.location = (31.5941 S, 28.7569 E)  
         self.status = 'Idle'
         self.package = Medication
     
@@ -27,18 +27,17 @@ class Drone:
     
     def verify_recipient(self, verification_type):
         if verification_type == 'QR':
-            recipient_qr = qrcode.make(self.package['id'])  # Generate expected QR
+            recipient_qr = qrcode.make(self.package['id']) 
             print(f"Scan QR code: {recipient_qr}")
-            # Simulate scanning the QR code
-            scanned_qr = recipient_qr  # Simulating match
+            scanned_qr = recipient_qr
             return self.verify_recipient_qr(scanned_qr)
         
         elif verification_type == 'OTP':
-            entered_otp = input("Enter OTP: ")  # Simulate user entering OTP
+            entered_otp = input("Enter OTP: ") 
             return self.verify_otp(entered_otp)
     
     def verify_recipient_qr(self, qr_code):
-        expected_qr = qrcode.make(self.package['id'])
+        expected_qr = qrcode.make(self.package['Medication'])
         return qr_code == expected_qr
 
     def verify_otp(self, entered_otp):
@@ -46,10 +45,10 @@ class Drone:
 
     def deliver_package(self):
         if self.package:
-            verification_successful = self.verify_recipient('OTP')  # or 'QR'
+            verification_successful = self.verify_recipient('OTP') 
             if verification_successful:
-                print(f"Drone {self.drone_id} delivered package {self.package['id']}.")
-                self.package = None
+                print(f"Drone {self.drone_id} delivered package {self.package['Medication']}.")
+                self.package = Medication
                 self.status = 'Returning'
             else:
                 print("Verification failed. Unable to deliver.")
