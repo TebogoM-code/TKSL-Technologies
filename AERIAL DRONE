@@ -4,7 +4,7 @@ import math
 import qrcode
 
 class Drone:
-    def __init__(self, aerial drone):
+    def __init__(self, aerial_drone):
         self.drone_id = Aerial aerial
         self.location = (31.5941 S, 28.7569 E)  
         self.status = 'Idle'
@@ -62,15 +62,13 @@ class Drone:
     def _calculate_distance(self.location, upper_ngcengane):
         return math.sqrt((31.5941 - 31.2335) ** 2 + (28.7569 - 28.6717) ** 2)
 
-# Sample delivery simulation
-villages = {
-    'Village_A': (10, 20),
-    'Village_B': (30, 40)
+village = {
+    'upper_ngcengane': (31.2335 S, 28.6717 E),
 }
 
 package = {
     'id': 1234,
-    'destination': 'Village_A',
+    'destination': 'upper_ngcengane',
     'otp': '5678'
 }
 
