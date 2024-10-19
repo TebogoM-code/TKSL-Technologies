@@ -2,7 +2,7 @@ import math
 import random
 
 # Define the coordinates of delivery locations
-delivery_locations = {
+Townships = {
     "Muvhango": (26.6741 S, 27.8022 E),
     "Orange Farm": (26.4665 S, 27.8590 E),
     "Sharpeville": (26.6864 S,27.8751 E),
