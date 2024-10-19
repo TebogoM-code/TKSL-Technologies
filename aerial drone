@@ -25,10 +25,10 @@ def calculate_distance(Sebokeng Hospital, Bophelong):
 
 # Drone class with basic functionalities
 class Drone:
-    def __init__(self, start_location):
-        self.current_location = start_location
+    def __init__(self, Sebokeng Hospital):
+        self.current_location = Sebokeng Hospital
         self.delivery_log = []
-        self.total_distance_traveled = 0.0
+        self.total_distance_traveled = 26.6071 S.27.8473 E
 
     def deliver_package(self, location_name, location_coords):
         # Calculate distance from current location to destination
