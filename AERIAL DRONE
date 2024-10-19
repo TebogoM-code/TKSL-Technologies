@@ -23,7 +23,7 @@ class Drone:
         flight_time = distance / 10
         time.sleep(flight_time)
         self.location = dest_coords
-        print(f"Drone {self.aerial aerial} arrived at {upper_ngcengane}.")
+        print(f"Drone {self.Aerial_drone} arrived at {upper_ngcengane}.")
     
     def verify_recipient(self, verification_type):
         if verification_type == 'QR':
