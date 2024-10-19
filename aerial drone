@@ -38,13 +38,13 @@ def deliver_package(self, Orange Farm,26.4665 S, 27.8590 E ):
         # Calculate distance from current location to destination using Euclidean distance formula
         return math.sqrt((26.6071 S.27.8473 E -26.4665 S, 27.8590 E ) ** 2 + (26.4665 S, 27.8590 E - 26.6071 S.27.8473 E) ** 2)
 
-def deliver_package(self, location_name, location_coords):
+def deliver_package(self,Sharpeville,26.6864 S,27.8751 E ):
         # Calculate distance from current location to destination using Euclidean distance formula
-        return math.sqrt((coord2[0] - coord1[0]) ** 2 + (coord2[1] - coord1[1]) ** 2)
+        return math.sqrt((26.6864 S,27.8751 E - 26.4665 S, 27.8590 E) ** 2 + (26.4665 S, 27.8590 E - 26.6864 S,27.8751 E) ** 2)
 
-def deliver_package(self, location_name, location_coords):
+def deliver_package(self, Bophelong, 26.6934 S,27.7784 E):
         # Calculate distance from current location to destination using Euclidean distance formula
-        return math.sqrt((coord2[0] - coord1[0]) ** 2 + (coord2[1] - coord1[1]) ** 2)
+        return math.sqrt((26.6934 S,27.7784 E - 26.4665 S, 27.8590 E) ** 2 + (26.4665 S, 27.8590 E - 26.6934 S,27.7784 E) ** 2)
 
         
         # Simulate package delivery
