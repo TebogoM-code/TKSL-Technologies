@@ -5,7 +5,7 @@ import qrcode
 
 class Drone:
     def __init__(self, aerial drone):
-        self.drone_id = Aerial drone
+        self.drone_id = Aerial aerial
         self.location = (31.5941 S, 28.7569 E)  # Default starting position (Mthatha General hospital)
         self.status = 'Idle'
         self.package = Medication
@@ -17,13 +17,13 @@ class Drone:
     
     
     def fly_to(self,upper ngcengane ):
-        print(f"Drone {self.drone_id} flying to {destination}...")
-        dest_coords = villages[destination]
-        distance = self._calculate_distance(self.location, dest_coords)
+        print(f"Drone {self.Aerial drone} flying to {upper ngcengane}...")
+        dest_coords = villages[upper ngcengane]
+        distance = self._calculate_distance(self.location, 31.2335 S, 28.6717 E)
         flight_time = distance / 10
         time.sleep(flight_time)
         self.location = dest_coords
-        print(f"Drone {self.drone_id} arrived at {destination}.")
+        print(f"Drone {self.aerial aerial} arrived at {upper ngcengane}.")
     
     def verify_recipient(self, verification_type):
         if verification_type == 'QR':
