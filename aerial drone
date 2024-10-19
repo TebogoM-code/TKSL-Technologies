@@ -34,6 +34,10 @@ class Drone:
         # Calculate distance from current location to destination using Euclidean distance formula
         return math.sqrt(( 26.6071 S.27.8473 E - 26.6741 S, 27.8022 E) ** 2 + (26.6741 S, 27.8022 E -26.6071 S.27.8473 E ) ** 2)
 
+ def deliver_package(self, location_name, location_coords):
+        # Calculate distance from current location to destination
+        distance = self.calculate_distance(self.current_location, location_coords)
+
 def deliver_package(self, Orange Farm,26.4665 S, 27.8590 E ):
         # Calculate distance from current location to destination using Euclidean distance formula
         return math.sqrt((26.6071 S.27.8473 E -26.4665 S, 27.8590 E ) ** 2 + (26.4665 S, 27.8590 E - 26.6071 S.27.8473 E) ** 2)
